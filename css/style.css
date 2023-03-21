@@ -839,30 +839,35 @@ input[type="search"] {
 }
 
 @-webkit-keyframes hilight {
-  0%
-    {
-      background-position: 0;}
-  60%
-    {background-position: 600px;
-    -webkit-text-fill-color: transparent;}
-  100%
-    {background: transparent;
-      -webkit-text-fill-color: var(--blanche); }
+  0% {
+      background-position: 0;
+    }
+  60% {
+      background-position: 600px;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+      background: transparent;
+      -webkit-text-fill-color: var(--blanche); 
+    }
 }
 
 @keyframes hilight {
-  0%
-    {
-      background-position: 0;}
-  60%
-    {background-position: 600px;
-    -webkit-text-fill-color: transparent;}
-  100%
-    {background: transparent;
-      -webkit-text-fill-color: var(--blanche); }
+  0% {
+      background-position: 0;
+    }
+  60% {
+      background-position: 600px;
+      -webkit-text-fill-color: transparent;
+  }
+  100% {
+     background: transparent;
+     -webkit-text-fill-color: var(--blanche);
+    }
 }
 
 .intro-btn {
+  cursor: pointer;
   padding: 19px 35px;
   width: 280px;
   min-height: 78px;
@@ -871,12 +876,9 @@ input[type="search"] {
   font-weight: var(--septieme);
   line-height: 29px;
   text-align: center;
-  color: var(--blanche);
-  background-color: rgba(123, 177, 255, 0.9);
+  color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(255, 255, 255, 0.7);
   border-radius: 5px;
-  -webkit-transition: background-color 0.3s ease-in-out;
-  -o-transition: background-color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
   -webkit-animation: 3s 1 finaly;
           animation: 3s 1 finaly;
 }
@@ -885,9 +887,9 @@ input[type="search"] {
   0% {background-color: transparent; 
     -webkit-text-fill-color: transparent; }
   90% {
-    background-color: rgba(123, 177, 255, 0.5);
+    background-color: rgba(102, 102, 102, 0.3);
     -webkit-text-fill-color: rgba(255, 255, 255, 0.5); }
-  100% { background-color: rgba(123, 177, 255, 0.9);
+  100% { background-color: rgba(65, 65, 65, 0.9);
     -webkit-text-fill-color: var(--blanche); }
 }
 
@@ -895,19 +897,10 @@ input[type="search"] {
   0% {background-color: transparent; 
     -webkit-text-fill-color: transparent; }
   90% {
-    background-color: rgba(123, 177, 255, 0.5);
+    background-color: rgba(102, 102, 102, 0.3);
     -webkit-text-fill-color: rgba(255, 255, 255, 0.5); }
-  100% { background-color: rgba(123, 177, 255, 0.9);
+  100% { background-color: rgba(65, 65, 65, 0.9);
     -webkit-text-fill-color: var(--blanche); }
-}
-
-.intro-btn:focus,
-.intro-btn:hover  {
-  background-color: var(--coleur-de-fond);
-}
-
-.intro-btn:active {
-  background-color: var(--secondary);
 }
 
 @media (max-width: 1800px) {
@@ -918,6 +911,20 @@ input[type="search"] {
 }
 
 @media (max-width: 1440px) {
+  .intro-title,
+  .intro-text {
+  background: transparent;
+  -webkit-text-fill-color: var(--blanche);
+  text-shadow: 2px 2px 2px var(--gris-fonce);
+  }
+
+  .intro-title,
+  .intro-text,
+  .intro-btn {
+    -webkit-animation: 0;
+    animation: 0;
+   }
+
   .intro-btn {
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
@@ -934,19 +941,6 @@ input[type="search"] {
     max-width: 100%;
     min-height: 620px;
   }
-
-  .intro-title,
-  .intro-text {
-  background: transparent;
-  -webkit-text-fill-color: var(--blanche);
-  }
-
- .intro-title,
- .intro-text,
- .intro-btn {
-        -webkit-animation: none !important;
-        animation: none !important;
-  } 
 }
 
 /* inside */

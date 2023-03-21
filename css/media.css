@@ -1277,15 +1277,13 @@
 
   .intro-title {
     margin-bottom: 6px;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 40px;
+    line-height: 100%;
   }
 
   .intro-text {
     margin-bottom: 34px;
-    width: 50%;
-    font-size: 12px;
-    line-height: 15px;
+    width: 60%;
   }
 
   .intro-btn {
@@ -1294,7 +1292,6 @@
     min-height: 40px;
     font-size: 12px;
     line-height: 15px;
-    background-color: var(--primary);
   }
 
   /* inside */
@@ -1509,24 +1506,12 @@
   }
 
   .accordion-active .faq-icon::before {
-    -webkit-transform: translateY(-10px) translateX(-1px)rotate(135deg);
-        -ms-transform: translateY(-10px) translateX(-1px)rotate(135deg);
-            transform: translateY(-10px) translateX(-1px)rotate(135deg);
+    -webkit-transform: translate(-1px, -10px) rotate(135deg);
+        -ms-transform: translate(-1px, -10px) rotate(135deg);
+            transform: translate(-1px, -10px) rotate(135deg);
   }
 
   .accordion-active .faq-icon::after {
-    -webkit-transform: translateX(-10px) rotate(135deg);
-        -ms-transform: translateX(-10px) rotate(135deg);
-            transform: translateX(-10px) rotate(135deg);
-  }
-
-  .faq-item:active .faq-icon::before {
-    -webkit-transform: translateY(-10px) translateX(-1px)rotate(135deg);
-        -ms-transform: translateY(-10px) translateX(-1px)rotate(135deg);
-            transform: translateY(-10px) translateX(-1px)rotate(135deg);
-  }
-      
-  .faq-item:active .faq-icon::after {
     -webkit-transform: translateX(-10px) rotate(135deg);
         -ms-transform: translateX(-10px) rotate(135deg);
             transform: translateX(-10px) rotate(135deg);
@@ -1705,13 +1690,17 @@
 
   /* intro */
 
+  .intro {
+    margin-bottom: 30px;
+  }
+
   .slider {
     max-width: 100%;
-    min-height: 400px;
+    height: 300px;
   }
 
   .slide {
-    min-height: inherit;
+    height: inherit;
   }
   
   .first-slide {
@@ -1727,6 +1716,15 @@
   .third-slide {
     min-height: inherit;
     background-image: url('../img/handsmap-320.jpg');
+  }
+
+  .container-intro {
+    align-items: center;
+  }
+
+  .intro-title {
+    width: fit-content;
+    text-align: center;
   }
 
   .intro-title,
