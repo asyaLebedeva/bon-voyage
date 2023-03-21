@@ -1683,7 +1683,7 @@
 
   .cancel-btn {
     top: 32%;
-    right: 10%;
+    right: 12%;
     -webkit-transform: scale(0.9);
         -ms-transform: scale(0.9);
             transform: scale(0.9);
@@ -1880,27 +1880,15 @@
   }
 
   .accordion-active .faq-icon::before {
-    -webkit-transform: translateY(-10px) translateX(-1px)rotate(135deg);
-        -ms-transform: translateY(-10px) translateX(-1px)rotate(135deg);
-            transform: translateY(-10px) translateX(-1px)rotate(135deg);
+      -webkit-transform: translate(-1.5px, -9.5px) rotate(135deg);
+      -ms-transform: translate(-1.5px, -9.5px) rotate(135deg);
+      transform: translate(-1.5px, -9.5px) rotate(135deg);
   }
 
   .accordion-active .faq-icon::after {
-    -webkit-transform: translateX(-10px) rotate(135deg);
-        -ms-transform: translateX(-10px) rotate(135deg);
-            transform: translateX(-10px) rotate(135deg);
-  }
-
-  .faq-item:active .faq-icon::before {
-    -webkit-transform: translateY(-10px) translateX(-1px)rotate(135deg);
-        -ms-transform: translateY(-10px) translateX(-1px)rotate(135deg);
-            transform: translateY(-10px) translateX(-1px)rotate(135deg);
-  }
-      
-  .faq-item:active .faq-icon::after {
-    -webkit-transform: translateX(-10px) rotate(135deg);
-        -ms-transform: translateX(-10px) rotate(135deg);
-            transform: translateX(-10px) rotate(135deg);
+    -webkit-transform: translateX(-11px) rotate(135deg);
+        -ms-transform: translateX(-11px) rotate(135deg);
+            transform: translateX(-11px) rotate(135deg);
   }
 
   /* footer */
