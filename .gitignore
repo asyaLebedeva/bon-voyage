@@ -1,0 +1,13 @@
+# Editor files #
+################
+.vscode
+
+# Untracked Files #
+###################
+*.md
+
+# Folders #
+###########
+img/
+dist/
+fonts/
