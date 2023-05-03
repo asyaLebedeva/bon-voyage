@@ -640,7 +640,7 @@ input[type="search"] {
 
 .slider {
   position: relative;
-  min-height: 620px;
+  min-height: 800px;
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 0 0 5px 5px;
   z-index: -1;
@@ -753,11 +753,11 @@ input[type="search"] {
   opacity: 0.5;
 }
 
-.ion-arrow-left-c {
+.icon-arrow-left-c {
   background-image: url('../img/arrow-prev.svg');
 }
 
-.ion-arrow-right-c {
+.icon-arrow-right-c {
   background-image: url('../img/arrow-next.svg');
 }
 
@@ -1577,84 +1577,6 @@ input[type="search"] {
   color: var(--claire);
 }
 
-.faq-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  position: relative;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  margin-left: auto;
-  width: 50px;
-  height: 50px;
-  -webkit-transition: background-color 0.3s ease-in-out;
-  -o-transition: background-color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
-}
-  
-.faq-icon::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 70%;
-  height: 2px;
-  background-color: var(--saturation-blue);
-  border-radius: 5px;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-  -o-transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-}
-  
-.faq-icon::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 2px;
-  min-height: 70%;
-  background-color: var(--saturation-blue);
-  border-radius: 5px;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-  -o-transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-}
-    
-.faq-item:hover .faq-icon::before,
-.faq-item:hover .faq-icon::after {
-  background-color: var(--primary);
-}
-    
-.faq-item:active .faq-icon::before,
-.faq-item:active .faq-icon::after {
-  background-color: var(--secondary);
-}
-    
-.faq-item:active .faq-icon::before {
-  -webkit-transform: translateY(-17px) rotate(135deg);
-      -ms-transform: translateY(-17px) rotate(135deg);
-          transform: translateY(-17px) rotate(135deg);
-}
-    
-.faq-item:active .faq-icon::after {
-  -webkit-transform: translateX(-17px) rotate(135deg);
-      -ms-transform: translateX(-17px) rotate(135deg);
-          transform: translateX(-17px) rotate(135deg);
-}
-
 .accordion-content {
   overflow: hidden;
   width: 50%;
@@ -1681,22 +1603,55 @@ input[type="search"] {
   visibility: visible;
 }
 
+.faq-icon {
+  width: 50px;
+  height: 50px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.faq-icon:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 1px;
+  background-color: var(--saturation-blue);
+}
+
+.faq-icon:before {
+  content: "";
+  position: absolute;
+  right: 50%;
+  width: 1px;
+  height: 50px;
+  background-color: var(--saturation-blue);
+}
+
+.faq-icon:focus:after,
+.faq-icon:focus:before {
+  background-color: var(--secondary);
+}
+
+.faq-icon:hover:after,
+.faq-icon:hover:before {
+  background-color: var(--primary);
+}
+
+.faq-icon:active:after,
+.faq-icon:active:before {
+  background-color: var(--gris-fonce);
+}
+
 .accordion-faq .faq-icon {
   position: absolute;
   top: 22px;
   right: 0;
 }
 
-.accordion-active .faq-icon::after {
-  -webkit-transform: translateX(-17px) rotate(135deg);
-      -ms-transform: translateX(-17px) rotate(135deg);
-          transform: translateX(-17px) rotate(135deg);
-}
-
-.accordion-active .faq-icon::before {
-  -webkit-transform: translateY(-17px) rotate(135deg);
-      -ms-transform: translateY(-17px) rotate(135deg);
-          transform: translateY(-17px) rotate(135deg);
+.accordion-active .faq-icon {
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
 }
 
 #SL_balloon_obj {
@@ -2118,7 +2073,8 @@ input[type="email"] {
 
 .check-in + .personal-data::before {
   content: '';
-  display: inline-block;
+  display: flex;
+  flex-shrink: 0;
   width: 14px;
   min-height: 14px;
   margin-right: 4px;
@@ -2134,7 +2090,7 @@ input[type="email"] {
   background-image: url('../img/check-in.svg');
 }
 
-.personal-data {
+.text-terms {
   font-weight: var(--quatrieme);
   font-size: 16px;
   line-height: 32px;

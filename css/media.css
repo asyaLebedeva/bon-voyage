@@ -126,7 +126,7 @@
   }
 
   .slider  {
-    min-height: 1016px;
+    min-height: 70rem;
     border-radius: 0 0 20px 20px;
   }
 
@@ -163,6 +163,17 @@
     padding: var(--grand) 7rem;
     font-size: var(--taille);
     line-height: var(--taille);
+    width: 50rem;
+  }
+
+  .icon-arrow {
+    -webkit-transform: scale(2);
+            -ms-transform: scale(2);
+            transform: translateY(-2rem) scale(2);
+  }
+
+  .icon-arrow-right-c {
+    transform: translate(2rem, -2rem) scale(2);
   }
 
   /* inside */
@@ -322,6 +333,12 @@
             transform: scale(2);
   }
 
+  .accordion-active .faq-icon {
+    -webkit-transform: scale(2) rotate(135deg);
+        -ms-transform: scale(2) rotate(135deg);
+            transform: scale(2) rotate(135deg);
+  }
+
   /* footer */
 
   .footer .container {
@@ -451,7 +468,7 @@
     background-size: 95% 95%;
   }
 
-  .personal-data {
+  .text-terms {
     font-size: var(--petit);
     line-height: var(--taille);
   }
@@ -537,10 +554,6 @@
   }
 
   /* Swiper */
-
-  .slider {
-    min-height: 800px;
-  }
 
   .slide {
     min-height: inherit;
@@ -762,10 +775,6 @@
     padding: 19px 35px;
     min-width: 240px;
     min-height: 58px;
-  }
-
-  .personal-data {
-    white-space: nowrap;
   }
 
   /* end of form*/
@@ -1083,10 +1092,6 @@
   .accordion-control {
     font-size: 20px;
     line-height: 32px;
-  }
-
-  .accordion-content {
-    width: 90%;
   }
 
   /* footer */
@@ -1501,20 +1506,15 @@
   }
 
   .faq-icon {
-    width: 30px;
-    height: 30px;
+    -webkit-transform: scale(0.5) rotate(135deg);
+        -ms-transform: scale(0.5);
+            transform: scale(0.5);
   }
 
-  .accordion-active .faq-icon::before {
-    -webkit-transform: translate(-1px, -10px) rotate(135deg);
-        -ms-transform: translate(-1px, -10px) rotate(135deg);
-            transform: translate(-1px, -10px) rotate(135deg);
-  }
-
-  .accordion-active .faq-icon::after {
-    -webkit-transform: translateX(-10px) rotate(135deg);
-        -ms-transform: translateX(-10px) rotate(135deg);
-            transform: translateX(-10px) rotate(135deg);
+  .accordion-active .faq-icon {
+    -webkit-transform: scale(0.5) rotate(135deg);
+        -ms-transform: scale(0.5) rotate(135deg);
+            transform: scale(0.5) rotate(135deg);
   }
 
   /*footer*/
@@ -1597,10 +1597,6 @@
     min-height: 40px;
     font-size: 12px;
     line-height: 15px;
-  }
-
-  .personal-data {
-    margin-bottom: 16px;
   }
 
   .conclusion {
@@ -1776,6 +1772,19 @@
     background-color: transparent;
   }
 
+  .card {
+    background-position: top 15% right 5%;
+  }
+
+  .card:first-child {
+    background-image: url('../img/icon-river-320.svg');
+  }
+
+  .card:nth-child(2) {
+    background-image: url('../img/icon-freedom-320.svg');
+  }
+
+
   .card-block {
     max-width: 100%;
   }
@@ -1869,26 +1878,6 @@
     line-height: 24px;
   }
 
-  .accordion-faq .faq-icon {
-    top: 35%;
-  }
-
-  .accordion-active .faq-icon {
-    top: 2%;
-  }
-
-  .accordion-active .faq-icon::before {
-      -webkit-transform: translate(-1.5px, -9.5px) rotate(135deg);
-      -ms-transform: translate(-1.5px, -9.5px) rotate(135deg);
-      transform: translate(-1.5px, -9.5px) rotate(135deg);
-  }
-
-  .accordion-active .faq-icon::after {
-    -webkit-transform: translateX(-11px) rotate(135deg);
-        -ms-transform: translateX(-11px) rotate(135deg);
-            transform: translateX(-11px) rotate(135deg);
-  }
-
   /* footer */
 
   .conclusion {
@@ -1896,7 +1885,7 @@
   }
 
   .footer-logo {
-    margin: 0 0 0 30px;
+    margin: 0 0 20px 30px;
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
             transform: scale(1);
