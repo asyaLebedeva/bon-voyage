@@ -16,21 +16,21 @@
         text-decoration: none;
       }
   
-      .notfound-page {
+      .page {
         color: #131c28;
         text-align: center;
       }
   
-      .notfound-title {
+      .page__title {
         margin: 40px 0;
         font-size: 2.5rem;
       }
-      .notfound-img {
+      .notfound__img {
         width: 600px;
         max-width: 75%;
       }
   
-      .btn-notfound {
+      .page__btn {
         padding: 15px;
         background-color: rgba(128, 27, 126, 0.7);
         color: #fff;
@@ -42,20 +42,20 @@
         transition: background-color 0.3s ease-in-out;
       }
       
-      .btn-notfound:focus {
+      .page__btn:focus {
         background-color: rgba(128, 27, 126, 0.7);
       }
   
-      .btn-notfound:hover {
+      .page__btn:hover {
         background-color: rgba(255, 130, 252, 0.7);
       }
   
-      .btn-notfound:active {
+      .page__btn:active {
         background-color: #333CFF;
       }
   
       @media (max-width: 767px){
-        .notfound-title { 
+        .page__title { 
           font-size: 2rem;
         }
       }
@@ -63,12 +63,12 @@
   </head>
   <body>
     <main>
-      <div class="notfound-page">
-        <h1 class="notfound-title">Page not found!</h1>
+      <div class="page">
+        <h1 class="page__title">Page not found!</h1>
         <div class="notfound">
-          <img class="notfound-img" src="img/404-error.svg" alt="404-error">
+          <img class="notfound__img" src="img/404-error.svg" alt="404-error">
         </div>
-        <a class="btn-notfound" href="index.html">Go back home, please</a>
+        <a class="page__btn" href="index.html">Go back home, please</a>
       </div>
     </main>
   </body>
