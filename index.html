@@ -15,92 +15,92 @@
     <header class="header">
       <div class="container">
         <div class="burger" tabindex="1">
-          <div class="bg-line"></div>
-          <div class="bg-line"></div>
-          <div class="bg-line"></div>
+          <div class="burger__line"></div>
+          <div class="burger__line"></div>
+          <div class="burger__line"></div>
         </div>
-        <picture class="header-img">
-          <source srcset="img/travelling-320.svg" media="(max-width: 320px)">
-          <source srcset="img/travelling-768.svg" media="(max-width: 768px)">
-          <source srcset="img/travelling-1024.svg" media="(max-width: 1024px)">
-          <source srcset="img/travelling.svg">
-          <img class="header-img" src="img/travelling.svg" alt="Logo">
+        <picture class="picture">
+          <source class="picture-little" srcset="img/travelling-320.svg" media="(max-width: 320px)">
+          <source class="picture-small" srcset="img/travelling-768.svg" media="(max-width: 768px)">
+          <source class="picture-middle" srcset="img/travelling-1024.svg" media="(max-width: 1024px)">
+          <source class="picture-std" srcset="img/travelling.svg">
+          <img class="picture__img" src="img/travelling.svg" alt="Logo">
         </picture>
         <nav class="nav">
           <ul class="nav-list list-reset">
-            <li class="nav-item"><a href="#about" class="nav-link link-reset">About</a></li>
-            <li class="nav-item"><a href="#projects" class="nav-link link-reset">Projects</a></li>
-            <li class="nav-item"><a href="#steps" class="nav-link link-reset">Stage</a></li>
-            <li class="nav-item"><a href="https://support.google.com/business/answer/3474122?hl=en" class="nav-link link-reset" target="_blank">Reviews</a></li>
-            <li class="nav-item"><a href="#contact" class="nav-link link-reset">Contact</a></li>
+            <li class="nav-list__item"><a href="#inside" class="nav-link link-reset">About</a></li>
+            <li class="nav-list__item"><a href="#cards" class="nav-link link-reset">Projects</a></li>
+            <li class="nav-list__item"><a href="#stages" class="nav-link link-reset">Stage</a></li>
+            <li class="nav-list__item"><a href="https://support.google.com/business/answer/3474122?hl=en" class="nav-link link-reset" target="_blank">Reviews</a></li>
+            <li class="nav-list__item"><a href="#contact" class="nav-link link-reset">Contact</a></li>
           </ul>
         </nav>
-        <form class="hd-search" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-          <div class="form-search">
-          <label for="fill-search"></label>
-          <input class="btn-search" id="fill-search" type="search" name="search" placeholder="What're searching?">
+        <form class="form search" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+          <div class="search__container">
+          <label class="search__label" for="fill-search"></label>
+          <input class="search__input" id="fill-search" type="search" name="search" placeholder="What're searching?">
           </div>
         </form>
-        <button class="btn-hd btn-reset">
-          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30px" height="30px"><path d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"/>
+        <button class="header__btn btn-reset">
+          <svg class="header__btn__svg" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30px" height="30px"><path d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"/>
           </svg>
         </button>
-        <button class="cancel-btn btn-reset">
-          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48" width="24px" height="24px"><path d="M 24 4 C 12.972066 4 4 12.972074 4 24 C 4 35.027926 12.972066 44 24 44 C 35.027934 44 44 35.027926 44 24 C 44 12.972074 35.027934 4 24 4 z M 24 7 C 33.406615 7 41 14.593391 41 24 C 41 33.406609 33.406615 41 24 41 C 14.593385 41 7 33.406609 7 24 C 7 14.593391 14.593385 7 24 7 z M 30.486328 15.978516 A 1.50015 1.50015 0 0 0 29.439453 16.439453 L 24 21.878906 L 18.560547 16.439453 A 1.50015 1.50015 0 0 0 17.484375 15.984375 A 1.50015 1.50015 0 0 0 16.439453 18.560547 L 21.878906 24 L 16.439453 29.439453 A 1.50015 1.50015 0 1 0 18.560547 31.560547 L 24 26.121094 L 29.439453 31.560547 A 1.50015 1.50015 0 1 0 31.560547 29.439453 L 26.121094 24 L 31.560547 18.560547 A 1.50015 1.50015 0 0 0 30.486328 15.978516 z"/></svg>
+        <button class="header__cancel-btn btn-reset">
+          <svg class="header__cancel-btn__svg" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48" width="24px" height="24px"><path d="M 24 4 C 12.972066 4 4 12.972074 4 24 C 4 35.027926 12.972066 44 24 44 C 35.027934 44 44 35.027926 44 24 C 44 12.972074 35.027934 4 24 4 z M 24 7 C 33.406615 7 41 14.593391 41 24 C 41 33.406609 33.406615 41 24 41 C 14.593385 41 7 33.406609 7 24 C 7 14.593391 14.593385 7 24 7 z M 30.486328 15.978516 A 1.50015 1.50015 0 0 0 29.439453 16.439453 L 24 21.878906 L 18.560547 16.439453 A 1.50015 1.50015 0 0 0 17.484375 15.984375 A 1.50015 1.50015 0 0 0 16.439453 18.560547 L 21.878906 24 L 16.439453 29.439453 A 1.50015 1.50015 0 1 0 18.560547 31.560547 L 24 26.121094 L 29.439453 31.560547 A 1.50015 1.50015 0 1 0 31.560547 29.439453 L 26.121094 24 L 31.560547 18.560547 A 1.50015 1.50015 0 0 0 30.486328 15.978516 z"/></svg>
         </button>
       </div>
     </header>
 
     <main class="main">
-      <section class="intro">
+      <section class="section-intro">
         <div class="container">
           <div class="slider">
-            <div class="container-intro">
-              <h1 class="intro-title">All for your comfort on the trip</h1>
-              <p class="intro-text">We will help you choose a convenient route for your happiness and rest</p>
-              <button class="intro-btn btn-reset">Learn more</button>
+            <div class="content">
+              <h1 class="content__title">All for your comfort on the trip</h1>
+              <p class="content__text">We will help you choose a convenient route for your happiness and rest</p>
+              <button class="content__btn btn-reset">Learn more</button>
             </div>
-            <div class="active first-slide slide"></div>
-            <div class="second-slide slide"></div>
-            <div class="third-slide slide"></div>
+            <div class="slider__back-earth slide active"></div>
+            <div class="slider__back-haiway slide"></div>
+            <div class="slider__back-car slide"></div>
           </div>
-          <nav class="slider-nav">
-            <ul class="list-reset">
-              <li class="arrow">
-                <button class="previous btn-reset arrow-btn"><span><i class="icon-arrow-left-c icon-arrow"></i></span></button>
+          <nav class="nav-btn">
+            <ul class="nav-btn__list list-reset">
+              <li class="nav-btn__item">
+                <button class="arrow-btn previous btn-reset"><span class="nav-btn__item__span"><i class="icon-arrow-left-c arrow-icon"></i></span></button>
               </li>
-              <li class="arrow">
-                <button class="next btn-reset arrow-btn"><span><i class="icon-arrow-right-c icon-arrow"></i></span></button>
+              <li class="nav-btn__item">
+                <button class="arrow-btn next btn-reset arrow-btn"><span class="nav-btn__item__span"><i class="icon-arrow-right-c arrow-icon"></i></span></button>
               </li>
             </ul>
           </nav>
         </div>
       </section>
 
-      <section class="inside">
-        <div class="container">
-          <h2 id="about" class="inside-title section-title">About us</h2>
-            <p class="inside-text">We help to make a tour map and choose hotels and travel destinations. We can advise on the preparation of all necessary documents for the trip, depending on the chosen place of visit. We can also simply provide transport for rent or provide other necessary assistance during your holiday. If you like extreme sports or you prefer exotic places, then we will tell you where and how you can get vaccinated in advance and what to take with you so that the adventure remains amazing and safe. We can also simply provide transport for rent or provide other necessary assistance during your holiday. We will be glad if you'll be satisfied with our service and can recommend us to one of your friends.</p>
-          <div class="case">
+      <section class="section-about">
+        <div class="container about">
+          <h2 id="inside" class="about__title section-title">About us</h2>
+            <p class="about__text">We help to make a tour map and choose hotels and travel destinations. We can advise on the preparation of all necessary documents for the trip, depending on the chosen place of visit. We can also simply provide transport for rent or provide other necessary assistance during your holiday. If you like extreme sports or you prefer exotic places, then we will tell you where and how you can get vaccinated in advance and what to take with you so that the adventure remains amazing and safe. We can also simply provide transport for rent or provide other necessary assistance during your holiday. We will be glad if you'll be satisfied with our service and can recommend us to one of your friends.</p>
+          <div class="chapter">
               <div class="enter">
-                <div class="enter-container">
-                  <p class="enter-descr">We have more than 1000 successful cases of vacations and camping. If you have any questions or wishes, you can always contact our consultants or write to us at any time, before, during, and after your trip.</p>
-                  <button class="enter-btn btn-reset">Users&rsquo; mentions</button>
+                <div class="enter__container">
+                  <p class="enter__descr">We have more than 1000 successful cases of vacations and camping. If you have any questions or wishes, you can always contact our consultants or write to us at any time, before, during, and after your trip.</p>
+                  <button class="enter__btn btn-reset">Users&rsquo; mentions</button>
                 </div>
               </div>
 
-              <div id="projects" class="card-block">
-                <div class="card">
-                  <div class="card-content">
-                    <h3 class="card-title">Weekend for everyone</h3>
-                    <p class="card-descr">We offer extensive travel options for everyone, you can travel with your couple or alone, with your family or friends</p>
+              <div id="cards" class="projects">
+                <div class="projects__block">
+                  <div class="projects__content">
+                    <h3 class="projects__title">Weekend for everyone</h3>
+                    <p class="projects__descr">We offer extensive travel options for everyone, you can travel with your couple or alone, with your family or friends</p>
                   </div>
                 </div>
 
-                <div class="card">
-                  <div class="card-content">
-                    <h3 class="card-title">Different levels of accessibility</h3>
-                    <p class="card-descr">We suggest different options for professional travelers and for usual people. Also, we can help to create a plane of rest for people with restricted abilities</p>
+                <div class="projects__block">
+                  <div class="projects__content">
+                    <h3 class="projects__title">Different levels of accessibility</h3>
+                    <p class="projects__descr">We suggest different options for professional travelers and for usual people. Also, we can help to create a plane of rest for people with restricted abilities</p>
                   </div>
                 </div>
               </div>
@@ -108,37 +108,37 @@
           </div>
       </section>
 
-      <section id="steps" class="stages">
-        <div class="container">
-          <h2 class="stages-title section-title">How we are working</h2>
-          <ol class="stages-list tabs-ol">
-            <li class="stages-item tabs-ol__item"><button class="stages-btn btn-reset tabs-ol__btn tabs-ol__btn--active" data-path="one">step</button></li>
-            <li class="stages-item tabs-ol__item"><button class="stages-btn btn-reset tabs-ol__btn tabs-ol__btn--active" data-path="two">step</button></li>
-            <li class="stages-item tabs-ol__item"><button class="stages-btn btn-reset tabs-ol__btn tabs-ol__btn--active" data-path="three">step</button></li>
-            <li class="stages-item tabs-ol__item"><button class="stages-btn btn-reset tabs-ol__btn tabs-ol__btn--active" data-path="four">step</button></li>
+      <section id="stages" class="section-steps">
+        <div class="container step">
+          <h2 class="step__title section-title">How we are working</h2>
+          <ol class="step__list tabs-ol">
+            <li class="step__item tabs-ol__item"><button class="step__item__btn btn-reset tabs-ol__btn tabs-ol__btn--active" data-path="one">step</button></li>
+            <li class="step__item tabs-ol__item"><button class="step__item__btn btn-reset tabs-ol__btn tabs-ol__btn--active" data-path="two">step</button></li>
+            <li class="step__item tabs-ol__item"><button class="step__item__btn btn-reset tabs-ol__btn tabs-ol__btn--active" data-path="three">step</button></li>
+            <li class="step__item tabs-ol__item"><button class="step__item__btn btn-reset tabs-ol__btn tabs-ol__btn--active" data-path="four">step</button></li>
           </ol>
         
-          <div class="step-container">
+          <div class="tabs-container">
             <div class="tabs-content">
             <div class="features">
                 <div class="tabs-item tabs-item--active" data-target="one">
-                  <h3 class="features-title">Studying your wishes and goals</h3>
-                  <p class="features-descr">Depending on your request we suggest different forms of vacation or traveling. You can go camping in the woods or mountains, also you can have a rest on the beach or in the village. Also, we can suggest excursions to special museums or rare places in different cities or countries</p>
+                  <h3 class="features__title">Studying your wishes and goals</h3>
+                  <p class="features__descr">Depending on your request we suggest different forms of vacation or traveling. You can go camping in the woods or mountains, also you can have a rest on the beach or in the village. Also, we can suggest excursions to special museums or rare places in different cities or countries</p>
                 </div>
 
                 <div class="tabs-item" data-target="two">
-                  <h3 class="features-title">Guide for trip</h3>
-                  <p class="features-descr">If you want to trip independently we can provide instructions for the safety of your life and health. Also, you can consult about all security phones, services, and hospitals for tourists in different locations, where services are delivered in English</p>
+                  <h3 class="features__title">Guide for trip</h3>
+                  <p class="features__descr">If you want to trip independently we can provide instructions for the safety of your life and health. Also, you can consult about all security phones, services, and hospitals for tourists in different locations, where services are delivered in English</p>
                 </div>
 
                 <div class="tabs-item" data-target="three">
-                  <h3 class="features-title">The interview with our lawyers</h3>
-                  <p class="features-descr">If you will want you can talk with our lawyers about documentation for specific places or countries. For example, if you will want to trip to special places like Area 51 or Niihau, you can get instructions from us and we can really help on how to draw up documents and choose transport for the road. Also, we not recommend you to trip in secret or restricted places, because it may be illegal</p>
+                  <h3 class="features__title">The interview with our lawyers</h3>
+                  <p class="features__descr">If you will want you can talk with our lawyers about documentation for specific places or countries. For example, if you will want to trip to special places like Area 51 or Niihau, you can get instructions from us and we can really help on how to draw up documents and choose transport for the road. Also, we not recommend you to trip in secret or restricted places, because it may be illegal</p>
                 </div>
 
                 <div class="tabs-item" data-target="four">
-                  <h3 class="features-title">Always in touch</h3>
-                  <p class="features-descr">You can connect with us for any questions, also we can recommend interesting places, museums and other attractions. We have cooperate with hotels, airports and transport company and we'll help you choose the optimal route or vacation at a reasonable cost</p>
+                  <h3 class="features__title">Always in touch</h3>
+                  <p class="features__descr">You can connect with us for any questions, also we can recommend interesting places, museums, and other attractions. We have to cooperate with hotels, airports, and transport company and we'll help you choose the optimal route or vacation at a reasonable cost</p>
                 </div>
               </div>
             </div>
@@ -151,61 +151,61 @@
         </div>
       </section>
 
-      <section class="faq">
-        <div class="container">
-          <h2 class="faq-title section-title">F. A. Q. </h2>
+      <section class="section-faq">
+        <div class="container faq">
+          <h2 class="faq__title section-title">F. A. Q. </h2>
           <ul class="faq-list list-reset accordion-list">
-            <li class="faq-item accordion">
-              <div class="accordion-faq">
-                <h3 class="accordion-hd"><button type="button" class="accordion-control">How the cost is formed?</button></h3>
-                <i class="faq-icon"></i>
+            <li class="faq-list__item accordion">
+              <div class="accordion-container">
+                <h3 class="accordion-container__accordion-head"><button type="button" class="accordion-control">How the cost is formed?</button></h3>
+                <i class="accordion-container__icon"></i>
                 <div class="accordion-content">
-                  <p class="accordion-descr">When we plan vacations or routes we take into account your possibilities. You need to remember the cost includes the cost of tickets, hotels, or camping.</p>
-                  <p class="accordion-descr">We care about our customers and therefore do not impose additional unnecessary services. At your request, we can provide you with a vacation or suggest travel of various levels of value and wishes.</p>
+                  <p class="accordion-content__descr">When we plan vacations or routes we take into account your possibilities. You need to remember the cost includes the cost of tickets, hotels, or camping.</p>
+                  <p class="accordion-content__descr">We care about our customers and therefore do not impose additional unnecessary services. At your request, we can provide you with a vacation or suggest travel of various levels of value and wishes.</p>
                 </div>
               </div>
             </li>
         
-            <li class="faq-item accordion">
-              <div class="accordion-faq">
-                <h3 class="accordion-hd"><button type="button" class="accordion-control">I have my own idea of organizing a trip. Can I implement it?</button></h3>
-                <i class="faq-icon"></i>
+            <li class="faq-list__item accordion">
+              <div class="accordion-container">
+                <h3 class="accordion-container__accordion-head"><button type="button" class="accordion-control">I have my own idea of organizing a trip. Can I implement it?</button></h3>
+                <i class="accordion-container__icon"></i>
                 <div class="accordion-content">
-                  <p class="accordion-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lobortis tincidunt massa, ac bibendum neque interdum id. Quisque efficitur lectus lobortis lacus varius fringilla.</p>
-                  <p class="accordion-descr">Quisque in augue mauris. Curabitur tincidunt aliquam felis non facilisis. Suspendisse feugiat massa in nulla congue, vel cursus elit mollis.</p>
+                  <p class="accordion-content__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lobortis tincidunt massa, ac bibendum neque interdum id. Quisque efficitur lectus lobortis lacus varius fringilla.</p>
+                  <p class="accordion-content__descr">Quisque in augue mauris. Curabitur tincidunt aliquam felis non facilisis. Suspendisse feugiat massa in nulla congue, vel cursus elit mollis.</p>
                 </div>
               </div>
             </li>
 
-            <li class="faq-item accordion">
-              <div class="accordion-faq">
-                <h3 class="accordion-hd"><button type="button" class="accordion-control">There are many other agencies. Why you?</button></h3>
-                <i class="faq-icon"></i>
+            <li class="faq-list__item accordion">
+              <div class="accordion-container">
+                <h3 class="accordion-container__accordion-head"><button type="button" class="accordion-control">There are many other agencies. Why you?</button></h3>
+                <i class="accordion-container__icon"></i>
                 <div class="accordion-content">
-                  <p class="accordion-descr">Vestibulum elit magna, suscipit ac dolor vel, consectetur molestie est. Nam congue velit faucibus lorem dictum, at condimentum leo condimentum.</p>
-                  <p class="accordion-descr">Proin sit amet varius metus, at dictum lectus. Fusce finibus congue dolor mattis cursus. Maecenas blandit purus sed justo vehicula, id molestie eros condimentum. Cras ac rutrum orci, ac bibendum sem.</p>
+                  <p class="accordion-content__descr">Vestibulum elit magna, suscipit ac dolor vel, consectetur molestie est. Nam congue velit faucibus lorem dictum, at condimentum leo condimentum.</p>
+                  <p class="accordion-content__descr">Proin sit amet varius metus, at dictum lectus. Fusce finibus congue dolor mattis cursus. Maecenas blandit purus sed justo vehicula, id molestie eros condimentum. Cras ac rutrum orci, ac bibendum sem.</p>
                 </div>
               </div>
             </li>
 
-            <li class="faq-item accordion">
-              <div class="accordion-faq">
-                <h3 class="accordion-hd"><button type="button" class="accordion-control">Is it possible to organize holidays for my employees?</button></h3>
-                <i class="faq-icon"></i>
+            <li class="faq-list__item accordion">
+              <div class="accordion-container">
+                <h3 class="accordion-container__accordion-head"><button type="button" class="accordion-control">Is it possible to organize holidays for my employees?</button></h3>
+                <i class="accordion-container__icon"></i>
                 <div class="accordion-content">
-                  <p class="accordion-descr">Donec vitae libero ac sapien mattis semper et eu massa.</p>
-                  <p class="accordion-descr">Curabitur commodo scelerisque metus, ut bibendum mi ultricies ac. Suspendisse vehicula facilisis quam quis lacinia. Phasellus porttitor ultrices turpis eu aliquet.</p>
+                  <p class="accordion-content__descr">Donec vitae libero ac sapien mattis semper et eu massa.</p>
+                  <p class="accordion-content__descr">Curabitur commodo scelerisque metus, ut bibendum mi ultricies ac. Suspendisse vehicula facilisis quam quis lacinia. Phasellus porttitor ultrices turpis eu aliquet.</p>
                   </div>
               </div>
             </li>
 
-            <li class="faq-item accordion">
-              <div class="accordion-faq">
-                <h3 class="accordion-hd"><button type="button" class="accordion-control">Is it possible to return the money and at what stage of the work with me?</button></h3>
-                <i class="faq-icon"></i>
+            <li class="faq-list__item accordion">
+              <div class="accordion-container">
+                <h3 class="accordion-container__accordion-head"><button type="button" class="accordion-control">Is it possible to return the money and at what stage of the work with me?</button></h3>
+                <i class="accordion-container__icon"></i>
                 <div class="accordion-content">
-                  <p class="accordion-descr">Integer placerat sem eget lectus tempor sollicitudin. Proin egestas lacinia nibh, non porta odio faucibus eget. Pellentesque sodales ullamcorper sollicitudin.</p>
-                  <p class="accordion-descr">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque quis rutrum dolor. Donec hendrerit vitae neque nec sodales. Donec vulputate pulvinar justo eget scelerisque. Vivamus ut ante tempus, pharetra erat vel, iaculis augue.</p>
+                  <p class="accordion-content__descr">Integer placerat sem eget lectus tempor sollicitudin. Proin egestas lacinia nibh, non porta odio faucibus eget. Pellentesque sodales ullamcorper sollicitudin.</p>
+                  <p class="accordion-content__descr">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque quis rutrum dolor. Donec hendrerit vitae neque nec sodales. Donec vulputate pulvinar justo eget scelerisque. Vivamus ut ante tempus, pharetra erat vel, iaculis augue.</p>
                   </div>
               </div>
             </li>
@@ -216,45 +216,46 @@
 
     <footer id="contact" class="footer">
       <div class="container">
-        <div class="conclusion">
-          <picture>
-            <source srcset="img/travelling-320.svg" media="(min-width: 320px)">
-            <source srcset="img/travelling-480.svg" media="(max-width: 480px)">
-            <source srcset="img/travelling.svg" media="(max-width: 768px)">
-            <source srcset="img/travelling.svg">
-            <img class="footer-logo" src="img/travelling.svg" alt="logo">
+        <div class="terms">
+          <picture class="picture">
+            <source class="picture-little" srcset="img/travelling-320.svg" media="(max-width: 320px)">
+            <source class="picture-small" srcset="img/travelling-768.svg" media="(max-width: 768px)">
+            <source class="picture-middle" srcset="img/travelling-1024.svg" media="(max-width: 1024px)">
+            <source class="picture-std" srcset="img/travelling.svg">
+            <img class="picture__img" src="img/travelling.svg" alt="Logo">
           </picture>
+          
           <ul class="terms-list list-reset">
-            <li class="terms-item"><a class="terms-link link-reset" href="#about">About</a></li>
-            <li class="terms-item"><a class="terms-link link-reset" href="#projects">Projects</a></li>
-            <li class="terms-item"><a class="terms-link link-reset" href="https://support.google.com/business/answer/3474122?hl=en" target="_blank">Reviews</a></li>
-            <li class="terms-item"><a class="terms-link link-reset" href="index-error.html" target="_blank">Terms & conditions</a></li>
-            <li class="terms-item">
-              <ul class="icons-terms list-reset">
-                <li class="icons-item"><a class="source-link icon__logo link-reset" href="https://logo.com/" target="_blank"></a></li>
-                <li class="icons-item"><a class="source-link icon__px link-reset" href="https://pixabay.com/" target="_blank"></a></li>
-                <li class="icons-item"><a class="source-link icon__softr link-reset" href="https://www.softr.io/blog/free-svg-illustrations" target="_blank"></a></li>
-                <li class="icons-item"><a class="source-link icon__free link-reset" href="https://www.freepik.com/" target="_blank"></a></li>
-                <li class="icons-item"><a class="source-link icon__flaticon link-reset" href="https://www.flaticon.com/" target="_blank"></a></li>
-                <li class="icons-item"><a class="source-link icon__eight link-reset" href="https://icons8.com" target="_blank"></a></li>
-                <li class="icons-item"><a class="source-link icon__craftwork link-reset" href="https://craftwork.design/" target="_blank"></a></li>
-                <li class="icons-item"><a class="source-link icon__un link-reset" href="https://unsplash.com/" target="_blank"></a></li>
+            <li class="terms-list__item"><a class="terms-list__link link-reset" href="#inside">About</a></li>
+            <li class="terms-list__item"><a class="terms-list__link link-reset" href="#cards">Projects</a></li>
+            <li class="terms-list__item"><a class="terms-list__link link-reset" href="https://support.google.com/business/answer/3474122?hl=en" target="_blank">Reviews</a></li>
+            <li class="terms-list__item"><a class="terms-list__link link-reset" href="index-error.html" target="_blank">Terms &amp; conditions</a></li>
+            <li class="terms-list__item">
+              <ul class="terms-list__icon-list list-reset">
+                <li class="terms-list__icon-list__icon-item"><a class="terms-list__icon-list__icon-item__source icon-logo link-reset" href="https://logo.com/" target="_blank"></a></li>
+                <li class="terms-list__icon-list__icon-item"><a class="terms-list__icon-list__icon-item__source icon-px link-reset" href="https://pixabay.com/" target="_blank"></a></li>
+                <li class="terms-list__icon-list__icon-item"><a class="terms-list__icon-list__icon-item__source icon-softr link-reset" href="https://www.softr.io/blog/free-svg-illustrations" target="_blank"></a></li>
+                <li class="terms-list__icon-list__icon-item"><a class="terms-list__icon-list__icon-item__source icon-free link-reset" href="https://www.freepik.com/" target="_blank"></a></li>
+                <li class="terms-list__icon-list__icon-item"><a class="terms-list__icon-list__icon-item__source icon-flaticon link-reset" href="https://www.flaticon.com/" target="_blank"></a></li>
+                <li class="terms-list__icon-list__icon-item"><a class="terms-list__icon-list__icon-item__source icon-eight link-reset" href="https://icons8.com" target="_blank"></a></li>
+                <li class="terms-list__icon-list__icon-item"><a class="terms-list__icon-list__icon-item__source icon-craftwork link-reset" href="https://craftwork.design/" target="_blank"></a></li>
+                <li class="terms-list__icon-list__icon-item"><a class="terms-list__icon-list__icon-item__source icon-un link-reset" href="https://unsplash.com/" target="_blank"></a></li>
               </ul>
             </li>
           </ul>
 
           <ul class="social-media list-reset">
-            <li class="media-item"><a class="media-link media__fb link-reset" href="https://facebook.com" target="_blank">             
+            <li class="social-media__item"><a class="social-media__link media-fb link-reset" href="https://facebook.com" target="_blank">             
               </a>
             </li>
-            <li class="media-item"><a class="media-link media__ln link-reset" href="https://www.linkedin.com/" target="_blank">
+            <li class="social-media__item"><a class="social-media__link media-ln link-reset" href="https://www.linkedin.com/" target="_blank">
               </a>
             </li>
-            <li class="media-item"><a class="media-link media__tw link-reset" href="https://twitter.com/" target="_blank">
+            <li class="social-media__item"><a class="social-media__link media-tw link-reset" href="https://twitter.com/" target="_blank">
             </a>
             </li>
-            <li class="media-item">
-              <a class="media-link media__inst link-reset" href="https://instagram.com" target="_blank">
+            <li class="social-media__item">
+              <a class="social-media__link media-inst link-reset" href="https://instagram.com" target="_blank">
               </a>
             </li>
           </ul>
@@ -262,31 +263,32 @@
 
         <div class="form-field">
           <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-            <div class="info-container">
-              <h2 class="info-title">Submit your application</h2>
-              <label for="firstname"></label>
-                <input class="info-input" type="text" id="firstname" name="name" placeholder="Name Lastname*" required>
+            <div class="info">
+              <h2 class="info__title">Submit your application</h2>
+              <label class="info__label" for="firstname"></label>
+                <input class="info__input" type="text" id="firstname" name="name" placeholder="Name Lastname*" required>
 
-              <label for="youremail"></label>
-                <input class="info-email" type="email" id="youremail" name="email" placeholder="Email*" required>
+              <label class="info__label" for="youremail"></label>
+                <input class="info__input__email" type="email" id="youremail" name="email" placeholder="Email*" required>
 
-              <label for="entertext"></label>
-                <textarea class="info-textarea" id="entertext" name="message" minlength="7" maxlength="360" cols="50" rows="10" placeholder="Message"></textarea>
+              <label class="info__label" for="entertext"></label>
+                <textarea class="info__textarea" id="entertext" name="message" minlength="7" maxlength="360" cols="50" rows="10" placeholder="Message"></textarea>
             </div>
 
             <div class="click-btn">
-            <label for="clickbutton"></label>
-                <button class="btn-submit btn-reset" id="clickbutton" type="submit" name="send">Send</button>
+              <label class="click-btn__label" for="clickbutton"></label>
+              <button class="click-btn__submit btn-reset" id="clickbutton" type="submit" name="send">Send</button>
               
-                <input class="check-in" type="checkbox" id="agree" name="check" checked>
-              <label for="agree" class="personal-data"><p class="text-terms">you agree to our&nbsp;<a class="agree-terms" href="index-error.html" target="_blank">Terms of Use</a></p></label>
-              </div>
+              <input class="click-btn__input" type="checkbox" id="agree" name="check" checked>
+              <label class="click-btn__label" for="agree"></label>
+              <p class="click-btn__terms">you agree to our&nbsp;<a class="click-btn__agree" href="index-error.html" target="_blank">Terms of Use</a></p>
+            </div>
           </form>
         </div>
 
         <div class="footer-text">
-          <p class="footer-descr">
-            We present a high level of services and suggest unique projects for your trips, vacations, and tourist route. We cooperate with stable companies, restaurants, cafes, museums, hotels, airports, car sharing, etc.You can contact us as it is more convenient for you: write on our social networks, write to us by mail, or call. We hope that we can make your vacation unforgettable and carefree. Be happy.
+          <p class="footer-text__descr">
+            We present a high level of services and suggest unique projects for your trips, vacations, and tourist route. We cooperate with stable companies, restaurants, cafes, museums, hotels, airports, car sharing, etc. You can contact us as it is more convenient for you: write on our social networks, write to us by mail, or call. We hope that we can make your vacation unforgettable and carefree. Be happy.
           </p>
         </div>
       </div>
