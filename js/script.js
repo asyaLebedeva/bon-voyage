@@ -62,41 +62,41 @@ document.querySelectorAll('.tabs-ol__btn').forEach(function(tabsBtn) {
     new Accordion('.accordion-list', {
       elementClass: 'accordion',
       panelClass: 'accordion-content',
-      triggerClass: 'accordion-faq',
-      activeClass: 'accordion-active'
+      triggerClass: 'accordion-container',
+      activeClass: 'accordion--active'
     });
 
 const burger = document.querySelector('.burger')
 const menu = document.querySelector('.nav')
-const logo = document.querySelector('.header-img')
+const logo = document.querySelector('.picture__img')
 const navLink = document.querySelectorAll('.nav-link')
 
 burger.addEventListener('click', function() {
-  burger.classList.toggle('burger-active'),
-  menu.classList.toggle('nav-active'),
-  logo.classList.toggle('header-img-none');
+  burger.classList.toggle('burger--active'),
+  menu.classList.toggle('nav--active'),
+  logo.classList.toggle('picture__img--none');
 })
 
   navLink.forEach(function(el) {
     el.addEventListener('click', function() {
-      burger.classList.remove('burger-active')
-      menu.classList.remove('nav-active')
-      logo.classList.remove('header-img-none')
+      burger.classList.remove('burger--active')
+      menu.classList.remove('nav--active')
+      logo.classList.remove('picture__img--none')
     })
   })
 
-const searchBtn = document.querySelector('.btn-hd')  
-const formField = document.querySelector('.hd-search') 
-const searchField = document.querySelector('.btn-search')
-const cancelBtn = document.querySelector('.cancel-btn') 
+const searchBtn = document.querySelector('.header__btn')  
+const formField = document.querySelector('.search') 
+const searchField = document.querySelector('.search__input')
+const cancelBtn = document.querySelector('.header__cancel-btn') 
       
 searchBtn.addEventListener('click', function() { 
-  searchField.classList.add('btn-search-active')
-  cancelBtn.classList.add('cancel-active')
+  searchField.classList.add('search__input--active')
+  cancelBtn.classList.add('cancel--active')
   formField.reset()
 })
 
 cancelBtn.addEventListener('click', function() {
-  cancelBtn.classList.remove('cancel-active')
-  searchField.classList.remove('btn-search-active')
+  cancelBtn.classList.remove('cancel--active')
+  searchField.classList.remove('search__input--active')
 })
