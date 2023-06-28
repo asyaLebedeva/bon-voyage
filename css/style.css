@@ -867,7 +867,6 @@ textarea {
 }
 
 .content__btn {
-  cursor: pointer;
   padding: 19px 35px;
   width: 280px;
   min-height: 78px;
@@ -877,10 +876,12 @@ textarea {
   line-height: 29px;
   text-align: center;
   color: rgba(0, 0, 0, 0.7);
+  outline: 1px solid rgba(255, 255, 255, .3);
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 5px;
   -webkit-animation: 3s 1 finaly;
           animation: 3s 1 finaly;
+          z-index: 10;
 }
 
 @-webkit-keyframes finaly {
