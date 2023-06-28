@@ -63,7 +63,17 @@ document.querySelectorAll('.tabs-ol__btn').forEach(function(tabsBtn) {
       elementClass: 'accordion',
       panelClass: 'accordion-content',
       triggerClass: 'accordion-container',
-      activeClass: 'accordion--active'
+      activeClass: 'accordion--active',
+      onOpen: function() {
+        document.querySelectorAll('.accordion-container__icon').forEach(function(pressBtn) {
+        pressBtn.setAttribute('aria-label', 'close text');  
+      })},
+      onClose: function() {
+        document.querySelectorAll('.accordion-container__icon').forEach(function(pressBtn) {
+          pressBtn.removeAttribute('aria-label', 'close text');
+          pressBtn.setAttribute('aria-label', 'open text');
+        })
+      }
     });
 
 const burger = document.querySelector('.burger')

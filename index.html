@@ -14,7 +14,7 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="burger" tabindex="1">
+        <div class="burger" tabindex="1" aria-label="tap for using navigation" role="button">
           <div class="burger__line"></div>
           <div class="burger__line"></div>
           <div class="burger__line"></div>
@@ -24,7 +24,7 @@
           <source class="picture-small" srcset="img/travelling-768.svg" media="(max-width: 768px)">
           <source class="picture-middle" srcset="img/travelling-1024.svg" media="(max-width: 1024px)">
           <source class="picture-std" srcset="img/travelling.svg">
-          <img class="picture__img" src="img/travelling.svg" alt="Logo">
+          <img class="picture__img" src="img/travelling.svg" alt="Logo Travel Agency">
         </picture>
         <nav class="nav">
           <ul class="nav-list list-reset">
@@ -37,15 +37,16 @@
         </nav>
         <form class="form search" action="https://jsonplaceholder.typicode.com/posts" method="POST">
           <div class="search__container">
-          <label class="search__label" for="fill-search"></label>
-          <input class="search__input" id="fill-search" type="search" name="search" placeholder="What're searching?">
+          <label class="search__label" for="text-for-search">
+          </label>
+          <input class="search__input" id="text-for-search" type="search" name="search" placeholder="What're searching?">
           </div>
         </form>
-        <button class="header__btn btn-reset">
+        <button class="header__btn btn-reset" aria-label="search">
           <svg class="header__btn__svg" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30px" height="30px"><path d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"/>
           </svg>
         </button>
-        <button class="header__cancel-btn btn-reset">
+        <button class="header__cancel-btn btn-reset" aria-label="cancel searching">
           <svg class="header__cancel-btn__svg" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48" width="24px" height="24px"><path d="M 24 4 C 12.972066 4 4 12.972074 4 24 C 4 35.027926 12.972066 44 24 44 C 35.027934 44 44 35.027926 44 24 C 44 12.972074 35.027934 4 24 4 z M 24 7 C 33.406615 7 41 14.593391 41 24 C 41 33.406609 33.406615 41 24 41 C 14.593385 41 7 33.406609 7 24 C 7 14.593391 14.593385 7 24 7 z M 30.486328 15.978516 A 1.50015 1.50015 0 0 0 29.439453 16.439453 L 24 21.878906 L 18.560547 16.439453 A 1.50015 1.50015 0 0 0 17.484375 15.984375 A 1.50015 1.50015 0 0 0 16.439453 18.560547 L 21.878906 24 L 16.439453 29.439453 A 1.50015 1.50015 0 1 0 18.560547 31.560547 L 24 26.121094 L 29.439453 31.560547 A 1.50015 1.50015 0 1 0 31.560547 29.439453 L 26.121094 24 L 31.560547 18.560547 A 1.50015 1.50015 0 0 0 30.486328 15.978516 z"/></svg>
         </button>
       </div>
@@ -58,7 +59,7 @@
             <div class="content">
               <h1 class="content__title">All for your comfort on the trip</h1>
               <p class="content__text">We will help you choose a convenient route for your happiness and rest</p>
-              <button class="content__btn btn-reset">Learn more</button>
+              <button class="content__btn btn-reset" aria-label="Learn more. Click on button">Learn more</button>
             </div>
             <div class="slider__back-earth slide active"></div>
             <div class="slider__back-haiway slide"></div>
@@ -67,10 +68,10 @@
           <nav class="nav-btn">
             <ul class="nav-btn__list list-reset">
               <li class="nav-btn__item">
-                <button class="arrow-btn previous btn-reset"><span class="nav-btn__item__span"><i class="icon-arrow-left-c arrow-icon"></i></span></button>
+                <button class="arrow-btn previous btn-reset" aria-label="previous slide"><span class="nav-btn__item__span"><i class="icon-arrow-left-c arrow-icon"></i></span></button>
               </li>
               <li class="nav-btn__item">
-                <button class="arrow-btn next btn-reset arrow-btn"><span class="nav-btn__item__span"><i class="icon-arrow-right-c arrow-icon"></i></span></button>
+                <button class="arrow-btn next btn-reset arrow-btn" aria-label="next slide"><span class="nav-btn__item__span"><i class="icon-arrow-right-c arrow-icon"></i></span></button>
               </li>
             </ul>
           </nav>
@@ -112,10 +113,10 @@
         <div class="container step">
           <h2 class="step__title section-title">How we are working</h2>
           <ol class="step__list tabs-ol">
-            <li class="step__item tabs-ol__item"><button class="step__item__btn btn-reset tabs-ol__btn tabs-ol__btn--active" data-path="one">step</button></li>
-            <li class="step__item tabs-ol__item"><button class="step__item__btn btn-reset tabs-ol__btn tabs-ol__btn--active" data-path="two">step</button></li>
-            <li class="step__item tabs-ol__item"><button class="step__item__btn btn-reset tabs-ol__btn tabs-ol__btn--active" data-path="three">step</button></li>
-            <li class="step__item tabs-ol__item"><button class="step__item__btn btn-reset tabs-ol__btn tabs-ol__btn--active" data-path="four">step</button></li>
+            <li class="step__item tabs-ol__item"><button class="step__item__btn btn-reset tabs-ol__btn tabs-ol__btn--active" data-path="one" aria-label="first step">step</button></li>
+            <li class="step__item tabs-ol__item"><button class="step__item__btn btn-reset tabs-ol__btn tabs-ol__btn--active" data-path="two" aria-label="second step">step</button></li>
+            <li class="step__item tabs-ol__item"><button class="step__item__btn btn-reset tabs-ol__btn tabs-ol__btn--active" data-path="three" aria-label="third step">step</button></li>
+            <li class="step__item tabs-ol__item"><button class="step__item__btn btn-reset tabs-ol__btn tabs-ol__btn--active" data-path="four" aria-label="fourth step">step</button></li>
           </ol>
         
           <div class="tabs-container">
@@ -158,7 +159,7 @@
             <li class="faq-list__item accordion">
               <div class="accordion-container">
                 <h3 class="accordion-container__accordion-head"><button type="button" class="accordion-control">How the cost is formed?</button></h3>
-                <i class="accordion-container__icon"></i>
+                <i class="accordion-container__icon" role="button" aria-label="click to open text"></i>
                 <div class="accordion-content">
                   <p class="accordion-content__descr">When we plan vacations or routes we take into account your possibilities. You need to remember the cost includes the cost of tickets, hotels, or camping.</p>
                   <p class="accordion-content__descr">We care about our customers and therefore do not impose additional unnecessary services. At your request, we can provide you with a vacation or suggest travel of various levels of value and wishes.</p>
@@ -169,7 +170,7 @@
             <li class="faq-list__item accordion">
               <div class="accordion-container">
                 <h3 class="accordion-container__accordion-head"><button type="button" class="accordion-control">I have my own idea of organizing a trip. Can I implement it?</button></h3>
-                <i class="accordion-container__icon"></i>
+                <i class="accordion-container__icon" role="button" aria-label="click to open text"></i>
                 <div class="accordion-content">
                   <p class="accordion-content__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lobortis tincidunt massa, ac bibendum neque interdum id. Quisque efficitur lectus lobortis lacus varius fringilla.</p>
                   <p class="accordion-content__descr">Quisque in augue mauris. Curabitur tincidunt aliquam felis non facilisis. Suspendisse feugiat massa in nulla congue, vel cursus elit mollis.</p>
@@ -180,7 +181,7 @@
             <li class="faq-list__item accordion">
               <div class="accordion-container">
                 <h3 class="accordion-container__accordion-head"><button type="button" class="accordion-control">There are many other agencies. Why you?</button></h3>
-                <i class="accordion-container__icon"></i>
+                <i class="accordion-container__icon" role="button" aria-label="click to open text"></i>
                 <div class="accordion-content">
                   <p class="accordion-content__descr">Vestibulum elit magna, suscipit ac dolor vel, consectetur molestie est. Nam congue velit faucibus lorem dictum, at condimentum leo condimentum.</p>
                   <p class="accordion-content__descr">Proin sit amet varius metus, at dictum lectus. Fusce finibus congue dolor mattis cursus. Maecenas blandit purus sed justo vehicula, id molestie eros condimentum. Cras ac rutrum orci, ac bibendum sem.</p>
@@ -191,7 +192,7 @@
             <li class="faq-list__item accordion">
               <div class="accordion-container">
                 <h3 class="accordion-container__accordion-head"><button type="button" class="accordion-control">Is it possible to organize holidays for my employees?</button></h3>
-                <i class="accordion-container__icon"></i>
+                <i class="accordion-container__icon" role="button" aria-label="click to open text"></i>
                 <div class="accordion-content">
                   <p class="accordion-content__descr">Donec vitae libero ac sapien mattis semper et eu massa.</p>
                   <p class="accordion-content__descr">Curabitur commodo scelerisque metus, ut bibendum mi ultricies ac. Suspendisse vehicula facilisis quam quis lacinia. Phasellus porttitor ultrices turpis eu aliquet.</p>
@@ -202,7 +203,7 @@
             <li class="faq-list__item accordion">
               <div class="accordion-container">
                 <h3 class="accordion-container__accordion-head"><button type="button" class="accordion-control">Is it possible to return the money and at what stage of the work with me?</button></h3>
-                <i class="accordion-container__icon"></i>
+                <i class="accordion-container__icon" role="button" aria-label="click to open text"></i>
                 <div class="accordion-content">
                   <p class="accordion-content__descr">Integer placerat sem eget lectus tempor sollicitudin. Proin egestas lacinia nibh, non porta odio faucibus eget. Pellentesque sodales ullamcorper sollicitudin.</p>
                   <p class="accordion-content__descr">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque quis rutrum dolor. Donec hendrerit vitae neque nec sodales. Donec vulputate pulvinar justo eget scelerisque. Vivamus ut ante tempus, pharetra erat vel, iaculis augue.</p>
@@ -222,27 +223,29 @@
             <source class="picture-small" srcset="img/travelling-768.svg" media="(max-width: 768px)">
             <source class="picture-middle" srcset="img/travelling-1024.svg" media="(max-width: 1024px)">
             <source class="picture-std" srcset="img/travelling.svg">
-            <img class="picture__img" src="img/travelling.svg" alt="Logo">
+            <img class="picture__img" src="img/travelling.svg" alt="Logo Travel Agency">
           </picture>
           
-          <ul class="terms-list list-reset">
-            <li class="terms-list__item"><a class="terms-list__link link-reset" href="#inside">About</a></li>
-            <li class="terms-list__item"><a class="terms-list__link link-reset" href="#cards">Projects</a></li>
-            <li class="terms-list__item"><a class="terms-list__link link-reset" href="https://support.google.com/business/answer/3474122?hl=en" target="_blank">Reviews</a></li>
-            <li class="terms-list__item"><a class="terms-list__link link-reset" href="index-error.html" target="_blank">Terms &amp; conditions</a></li>
-            <li class="terms-list__item">
-              <ul class="terms-list__icon-list list-reset">
-                <li class="terms-list__icon-list__icon-item"><a class="terms-list__icon-list__icon-item__source icon-logo link-reset" href="https://logo.com/" target="_blank"></a></li>
-                <li class="terms-list__icon-list__icon-item"><a class="terms-list__icon-list__icon-item__source icon-px link-reset" href="https://pixabay.com/" target="_blank"></a></li>
-                <li class="terms-list__icon-list__icon-item"><a class="terms-list__icon-list__icon-item__source icon-softr link-reset" href="https://www.softr.io/blog/free-svg-illustrations" target="_blank"></a></li>
-                <li class="terms-list__icon-list__icon-item"><a class="terms-list__icon-list__icon-item__source icon-free link-reset" href="https://www.freepik.com/" target="_blank"></a></li>
-                <li class="terms-list__icon-list__icon-item"><a class="terms-list__icon-list__icon-item__source icon-flaticon link-reset" href="https://www.flaticon.com/" target="_blank"></a></li>
-                <li class="terms-list__icon-list__icon-item"><a class="terms-list__icon-list__icon-item__source icon-eight link-reset" href="https://icons8.com" target="_blank"></a></li>
-                <li class="terms-list__icon-list__icon-item"><a class="terms-list__icon-list__icon-item__source icon-craftwork link-reset" href="https://craftwork.design/" target="_blank"></a></li>
-                <li class="terms-list__icon-list__icon-item"><a class="terms-list__icon-list__icon-item__source icon-un link-reset" href="https://unsplash.com/" target="_blank"></a></li>
+          <nav>
+            <ul class="terms-list list-reset">
+              <li class="terms-list__item"><a class="terms-list__link link-reset" href="#inside">About</a></li>
+              <li class="terms-list__item"><a class="terms-list__link link-reset" href="#cards">Projects</a></li>
+              <li class="terms-list__item"><a class="terms-list__link link-reset" href="https://support.google.com/business/answer/3474122?hl=en" target="_blank">Reviews</a></li>
+              <li class="terms-list__item"><a class="terms-list__link link-reset" href="index-error.html" target="_blank">Terms &amp; conditions</a></li>
+                <li class="terms-list__item">
+                <ul class="terms-list__icon-list list-reset">
+                  <li class="terms-list__icon-list__icon-item"><a class="terms-list__icon-list__icon-item__source icon-logo link-reset" href="https://logo.com/" target="_blank"></a></li>
+                  <li class="terms-list__icon-list__icon-item"><a class="terms-list__icon-list__icon-item__source icon-px link-reset" href="https://pixabay.com/" target="_blank"></a></li>
+                  <li class="terms-list__icon-list__icon-item"><a class="terms-list__icon-list__icon-item__source icon-softr link-reset" href="https://www.softr.io/blog/free-svg-illustrations" target="_blank"></a></li>
+                  <li class="terms-list__icon-list__icon-item"><a class="terms-list__icon-list__icon-item__source icon-free link-reset" href="https://www.freepik.com/" target="_blank"></a></li>
+                  <li class="terms-list__icon-list__icon-item"><a class="terms-list__icon-list__icon-item__source icon-flaticon link-reset" href="https://www.flaticon.com/" target="_blank"></a></li>
+                  <li class="terms-list__icon-list__icon-item"><a class="terms-list__icon-list__icon-item__source icon-eight link-reset" href="https://icons8.com" target="_blank"></a></li>
+                  <li class="terms-list__icon-list__icon-item"><a class="terms-list__icon-list__icon-item__source icon-craftwork link-reset" href="https://craftwork.design/" target="_blank"></a></li>
+                  <li class="terms-list__icon-list__icon-item"><a class="terms-list__icon-list__icon-item__source icon-un link-reset" href="https://unsplash.com/" target="_blank"></a></li>
               </ul>
-            </li>
-          </ul>
+              </li>
+            </ul>
+          </nav>
 
           <ul class="social-media list-reset">
             <li class="social-media__item"><a class="social-media__link media-fb link-reset" href="https://facebook.com" target="_blank">             
