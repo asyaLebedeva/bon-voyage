@@ -1608,8 +1608,8 @@ textarea {
 }
 
 .accordion-container__icon {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   transition: background-color 0.3s, transform 0.3s;
 }
 
@@ -1617,18 +1617,22 @@ textarea {
   content: "";
   position: absolute;
   top: 50%;
-  width: 50px;
-  height: 1px;
+  width: 40px;
+  height: 2px;
   background-color: var(--saturation-blue);
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #A6A3A2;
 }
 
 .accordion-container__icon:before {
   content: "";
   position: absolute;
   right: 50%;
-  width: 1px;
-  height: 50px;
+  width: 2px;
+  height: 40px;
   background-color: var(--saturation-blue);
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #A6A3A2;
 }
 
 .accordion-container__icon:focus:after,
