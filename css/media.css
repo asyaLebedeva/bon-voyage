@@ -135,15 +135,15 @@
   }
 
   .slider__back-earth {
-    background-image: url('../img/earth-3841.jpg');
+    background-image: url('../img/earth-3841.wepb');
   }
 
   .slider__back-haiway {
-    background-image: url('../img/haiway-3480.jpg');
+    background-image: url('../img/haiway-3480.wepb');
   }
 
   .slider__back-car {
-    background-image: url('../img/handsmap-3480.jpg');
+    background-image: url('../img/handsmap-3480.wepb');
   }
 
   .content__title {
@@ -192,7 +192,7 @@
 
   .enter::before {
     border-radius: 20px;
-    background-image: url('../img/sea-3480.jpg');
+    background-image: url('../img/sea-3480.webp');
   }
 
   .enter__container {
@@ -261,19 +261,19 @@
   }
   
   .tabs-item--active::before {
-    background-image: url('../img/client-3480.jpg');
+    background-image: url('../img/client-3480.webp');
   }
 
   .tabs-item:nth-child(2)::before {
-    background-image: url('../img/tourist-3480.jpg');
+    background-image: url('../img/tourist-3480.webp');
   }
 
   .tabs-item:nth-child(3)::before {
-    background-image: url('../img/lighthouse-3480.jpg');
+    background-image: url('../img/lighthouse-3480.webp');
   }
 
   .tabs-item:nth-child(4)::before {
-    background-image: url('../img/oldcity-3480.jpg');
+    background-image: url('../img/oldcity-3480.webp');
   }
 
   .features__title {
@@ -386,7 +386,7 @@
   /* form */
 
   .footer {
-    background-image: url('../img/footer-back-3480.jpg');
+    background-image: url('../img/footer-back-3480.webp');
   }
 
   .info__title {
@@ -561,17 +561,17 @@
 
   .slider__back-earth {
     min-height: inherit;
-    background-image: url('../img/earth-1024.jpg');
+    background-image: url('../img/earth-1024.webp');
   }
 
   .slider__back-haiway {
     min-height: inherit;
-    background-image: url('../img/haiway-1024.jpg');
+    background-image: url('../img/haiway-1024.webp');
   }
 
   .slider__back-car {
     min-height: inherit;
-    background-image: url('../img/handsmap-1024.jpg');
+    background-image: url('../img/handsmap-1024.webp');
   }
 
   .content {
@@ -625,7 +625,7 @@
   }
 
   .enter::before {
-    background-image: url('../img/sea-1024.jpg');
+    background-image: url('../img/sea-1024.webp');
   }
 
   .enter__container {
@@ -694,7 +694,7 @@
     min-height: 689px;
     height: 689px;
     max-width: calc(50% - 25px);
-    background-image: url('../img/client-1024.jpg');
+    background-image: url('../img/client-1024.webp');
     background-repeat: no-repeat;
     -webkit-transform: translateX(6%);
         -ms-transform: translateX(6%);
@@ -702,16 +702,16 @@
   }
 
   .tabs-item:nth-child(2)::before {
-    background-image: url('../img/tourist-1024.jpg');
+    background-image: url('../img/tourist-1024.webp');
     background-repeat: no-repeat;
   }
 
   .tabs-item:nth-child(3)::before {
-    background-image: url('../img/lighthouse-1024.jpg');
+    background-image: url('../img/lighthouse-1024.webp');
   }
 
   .tabs-item:nth-child(4)::before {
-    background-image: url('../img/oldcity-1024.jpg');
+    background-image: url('../img/oldcity-1024.webp');
   }
 
   .features {
@@ -739,7 +739,7 @@
   /* footer */
 
   .footer {
-    background-image: url('../img/footer-back-1024.jpg');
+    background-image: url('../img/footer-back-1024.webp');
   }
 
   .footer .container {
@@ -789,6 +789,12 @@
 @media (max-width: 992px) {
   .container {
     max-width: 992px;
+  }
+
+  .enter__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 35px 35px; 
   }
 
   .projects__block {
@@ -935,17 +941,17 @@
 
   .slider__back-earth {
     min-height: inherit;
-    background-image: url('../img/earth-768.jpg');
+    background-image: url('../img/earth-768.webp');
   }
 
-  .slider__back-earth {
+  .slider__back-haiway {
     min-height: inherit;
-    background-image: url('../img/haiway-768.jpg');
+    background-image: url('../img/haiway-768.webp');
   }
 
   .slider__back-car {
     min-height: inherit;
-    background-image: url('../img/handsmap-768.jpg');
+    background-image: url('../img/handsmap-768.webp');
   }
 
   .content {
@@ -986,13 +992,7 @@
   }
 
   .enter::before {
-    background-image: url('../img/sea-768.jpg');
-  }
-
-  .enter__container {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    padding: 35px 35px; 
+    background-image: url('../img/sea-768.webp');
   }
 
   .enter__descr { 
@@ -1074,19 +1074,19 @@
     margin: 0;
     min-height: 284px;
     height: 284px;
-    background-image: url('../img/client-768.jpg');
+    background-image: url('../img/client-768.webp');
   }
 
   .tabs-item:nth-child(2)::before {
-    background-image: url('../img/tourist-768.jpg');
+    background-image: url('../img/tourist-768.webp');
   }
 
   .tabs-item:nth-child(3)::before {
-    background-image: url('../img/lighthouse-768.jpg');
+    background-image: url('../img/lighthouse-768.webp');
   }
 
   .tabs-item:nth-child(4)::before {
-    background-image: url('../img/oldcity-768.jpg');
+    background-image: url('../img/oldcity-768.webp');
   } 
 
   /* F.A.Q. */
@@ -1177,6 +1177,10 @@
   .form-field .click-btn {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+
+  .info {
+    max-width: 90%;
   }
 }
 
@@ -1523,11 +1527,6 @@
     margin-bottom: 0;
   }
 
-  .footer .container {
-    padding: 0 15px;
-    max-width: 80%;
-  }
-
   .terms {
     margin: 0;
     min-height: 146px;
@@ -1600,6 +1599,11 @@
     min-height: 40px;
     font-size: 12px;
     line-height: 15px;
+  }
+
+  .footer .container {
+    padding: 0 15px;
+    max-width: 80%;
   }
 
   .terms {
@@ -1704,17 +1708,17 @@
   
   .slider__back-earth {
     min-height: inherit;
-    background-image: url('../img/earth-320.jpg');
+    background-image: url('../img/earth-320.webp');
   }
 
   .slider__back-haiway {
     min-height: inherit;
-    background-image: url('../img/haiway-320.jpg');
+    background-image: url('../img/haiway-320.webp');
   }
 
   .slider__back-car {
     min-height: inherit;
-    background-image: url('../img/handsmap-320.jpg');
+    background-image: url('../img/handsmap-320.webp');
   }
 
   .content {
@@ -1744,7 +1748,7 @@
   .enter::before {
     width: 100%;
     max-height: 200px;
-    background-image: url('../img/sea-480.jpg');
+    background-image: url('../img/sea-480.webp');
   }
   
   .enter__container {
@@ -1821,19 +1825,19 @@
   .tabs-item--active::before {
     top: 2px;
     left: -25px;
-    background-image: url('../img/client-320.jpg');
+    background-image: url('../img/client-320.webp');
   }
 
   .tabs-item:nth-child(2)::before {
-    background-image: url('../img/tourist-320.jpg');
+    background-image: url('../img/tourist-320.webp');
   }
 
   .tabs-item:nth-child(3)::before {
-    background-image: url('../img/lighthouse-320.jpg');
+    background-image: url('../img/lighthouse-320.webp');
   }
 
   .tabs-item:nth-child(4)::before {
-    background-image: url('../img/oldcity-320.jpg');
+    background-image: url('../img/oldcity-320.webp');
   }
 
   .features__title {

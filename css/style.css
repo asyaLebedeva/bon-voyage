@@ -661,17 +661,17 @@ textarea {
 
 .slider__back-earth {
   min-height: inherit;
-  background-image: url('../img/earth-1920.jpg');
+  background-image: url('../img/earth-1920.webp');
 }
 
 .slider__back-haiway {
   min-height: inherit;
-  background-image: url('../img/haiway-1920.jpg');
+  background-image: url('../img/haiway-1920.webp');
 }
 
 .slider__back-car {
   min-height: inherit;
-  background-image: url('../img/handsmap-1920.jpg');
+  background-image: url('../img/handsmap-1920.webp');
 }
 
 .arrow-btn {
@@ -999,7 +999,7 @@ textarea {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../img/sea-1920.jpg');
+  background-image: url('../img/sea-1920.webp');
   background-repeat: no-repeat;
   background-color: var(--gris);
   background-size: cover;
@@ -1137,7 +1137,7 @@ textarea {
   .enter::before {
     max-width: 100%;
     min-height: 200px;
-    background-image: url('../img/sea-1280.jpg');
+    background-image: url('../img/sea-1280.webp');
   }
 
   .projects {
@@ -1308,20 +1308,20 @@ textarea {
   right: 0;
   min-width: 40%;
   min-height: 460px;
-  background-image: url('../img/client-1920.jpg');
+  background-image: url('../img/client-1920.webp');
   background-repeat: no-repeat;
 }
 
 .tabs-item:nth-child(2)::before {
-  background-image: url('../img/tourist-1920.jpg');
+  background-image: url('../img/tourist-1920.webp');
 }
 
 .tabs-item:nth-child(3)::before {
-  background-image: url('../img/lighthouse-1920.jpg');
+  background-image: url('../img/lighthouse-1920.webp');
 }
 
 .tabs-item:nth-child(4)::before {
-  background-image: url('../img/oldcity-1920.jpg');
+  background-image: url('../img/oldcity-1920.webp');
 }
 
 .tabs-ol__btn {
@@ -1454,20 +1454,20 @@ textarea {
   }
 
   .tabs-item--active::before {
-    background-image: url('../img/client-1440.jpg');
+    background-image: url('../img/client-1440.webp');
   }
 
   .tabs-item:nth-child(2)::before {
-    background-image: url('../img/tourist-1440.jpg');
+    background-image: url('../img/tourist-1440.webp');
     background-repeat: no-repeat;
   }
 
   .tabs-item:nth-child(3)::before {
-    background-image: url('../img/lighthouse-1440.jpg');
+    background-image: url('../img/lighthouse-1440.webp');
   }
 
   .tabs-item:nth-child(4)::before {
-    background-image: url('../img/oldcity-1440.jpg');
+    background-image: url('../img/oldcity-1440.webp');
   }
 
   .features__descr {
@@ -1669,7 +1669,7 @@ textarea {
 /* footer */
 
 .footer {
-  background-image: url('../img/footer-back-1920.jpg');
+  background-image: url('../img/footer-back-1920.webp');
   background-color: rgba(0, 0, 0, 0.5);
   background-size: cover;
   background-repeat: no-repeat;
